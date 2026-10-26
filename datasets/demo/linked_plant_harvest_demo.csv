@@ -1,0 +1,4 @@
+plant_id,plot_id,crop,variety,observation_date,growth_stage,soil_ph,soil_moisture_pct,temperature_c,humidity_pct,image_reference,harvest_date,brix,fruit_weight_g,record_status
+DEMO-MANGO-001,DEMO-PLOT-A,mango,Alphonso,2026-05-14,fruit_set,6.4,34,29.2,72,demo-images/mango-001.jpg,2026-07-22,18.1,284,DEMONSTRATION_ONLY
+DEMO-MANGO-002,DEMO-PLOT-A,mango,Alphonso,2026-05-16,fruit_set,6.7,31,30.1,69,demo-images/mango-002.jpg,2026-07-25,17.5,267,DEMONSTRATION_ONLY
+DEMO-MANGO-003,DEMO-PLOT-B,mango,Banganapalli,2026-05-18,fruit_development,6.2,39,28.4,78,demo-images/mango-003.jpg,2026-07-30,19.0,301,DEMONSTRATION_ONLY

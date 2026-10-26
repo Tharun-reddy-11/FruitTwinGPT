@@ -1,0 +1,7 @@
+Objective 1 — Multimodal early fruit-quality prediction
+
+Combine flower and leaf images with soil properties, weather, irrigation, plant age, and crop variety to predict fruit quality before harvest. Compare image-only, tabular-only, and combined models.
+
+Objective 2 — Explainable digital-twin decision support
+
+Track each plant's condition and prediction history, show the factors influencing predicted quality, represent uncertainty, and generate understandable explanations for farmers using a vision-language model.

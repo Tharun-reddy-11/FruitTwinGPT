@@ -1,0 +1,43 @@
+{
+  "tabular_only": {
+    "model": "Agronomic-GBM-v1",
+    "r2_score": 0.94,
+    "rmse": 0.627,
+    "accuracy": 70.0,
+    "target": "Harvest Brix (\u00b0Bx) & Grade"
+  },
+  "image_only": {
+    "model": "VisionTransformer-Chroma-v2",
+    "r2_score": 0.946,
+    "rmse": 0.596,
+    "accuracy": 83.3,
+    "target": "Visual Ripeness & Grade"
+  },
+  "multimodal_fusion": {
+    "model": "FruitTwin-Multimodal-v2.4-Fusion",
+    "r2_score": 0.97,
+    "rmse": 0.441,
+    "accuracy": 82.5,
+    "target": "Multimodal Early Quality Prediction"
+  },
+  "comparison_chart": [
+    {
+      "model": "Image-only",
+      "accuracy": 83.3,
+      "r2": 94.6,
+      "rmse": 0.6
+    },
+    {
+      "model": "Tabular-only",
+      "accuracy": 70.0,
+      "r2": 94.0,
+      "rmse": 0.63
+    },
+    {
+      "model": "Multimodal Fusion",
+      "accuracy": 82.5,
+      "r2": 97.0,
+      "rmse": 0.44
+    }
+  ]
+}

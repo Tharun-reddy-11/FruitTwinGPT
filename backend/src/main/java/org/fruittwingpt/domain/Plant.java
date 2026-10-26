@@ -1,0 +1,3 @@
+package org.fruittwingpt.domain;
+import jakarta.persistence.*; import java.time.*;
+@Entity @Table(name="plants") public class Plant { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) public Long id; @ManyToOne(optional=false) @JoinColumn(name="owner_id") public AppUser owner; @Column(nullable=false) public String code; @Column(nullable=false) public String crop; public String variety; @Column(name="planting_date") public LocalDate plantingDate; @Column(name="location_label") public String locationLabel; @Column(name="created_at",nullable=false,updatable=false) public Instant createdAt=Instant.now(); }

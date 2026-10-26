@@ -1,0 +1,21 @@
+spring:
+  application.name: fruit-twin-api
+  profiles:
+    default: local
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3306/fruit_twin_gpt?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:Tharun@1126}
+  jpa:
+    open-in-view: false
+    hibernate.ddl-auto: validate
+  flyway.enabled: true
+server.error.include-message: never
+app:
+  local-development: false
+  jwt:
+    secret: ${JWT_SECRET:}
+    expiry-minutes: ${JWT_EXPIRY_MINUTES:60}
+  ml-service-url: ${ML_SERVICE_URL:http://localhost:8000}
+  cors-origin: ${CORS_ORIGIN:http://localhost:5173}
+springdoc.swagger-ui.path: /docs

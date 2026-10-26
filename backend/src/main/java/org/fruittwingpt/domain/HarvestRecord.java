@@ -1,0 +1,3 @@
+package org.fruittwingpt.domain;
+import jakarta.persistence.*; import java.math.BigDecimal; import java.time.*;
+@Entity @Table(name="harvest_records") public class HarvestRecord { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) public Long id; @ManyToOne(optional=false) @JoinColumn(name="plant_id") public Plant plant; @Column(name="harvested_at",nullable=false) public Instant harvestedAt; public BigDecimal brix; @Column(name="weight_g") public BigDecimal weightG; @Column(name="firmness_n") public BigDecimal firmnessN; @Column(nullable=false) public String provenance="USER_RECORDED"; @Column(name="created_at",nullable=false,updatable=false) public Instant createdAt=Instant.now(); }
